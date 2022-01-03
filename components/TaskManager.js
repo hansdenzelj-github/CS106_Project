@@ -21,21 +21,21 @@ export default class TaskManager extends React.Component {
                     <View>
                         <View style={[appStyle.bodyArea_TM]}>
 
-                            <View style={[appStyle.TM_card]}>
-                                <Text style={[appStyle.TM_cardText]}>
+                            <View style={[appStyle.cardArea]}>
+                                <Text style={[appStyle.cardText]}>
                                     How do we change the{`\n`}
                                     backgroundColor of the Task Cards?
                                 </Text>
                             </View>
 
-                            <View style={[appStyle.TM_card]}>
-                                <Text style={[appStyle.TM_cardText]}>
+                            <View style={[appStyle.cardArea]}>
+                                <Text style={[appStyle.cardText]}>
                                     Sample Task
                                 </Text>
                             </View>
 
-                            <View style={[appStyle.TM_card]}>
-                                <Text style={[appStyle.TM_cardText]}>
+                            <View style={[appStyle.cardArea]}>
+                                <Text style={[appStyle.cardText]}>
                                     This is using the ScrollView component...{`\n`}
                                     {`\n`}
                                     {`\n`}
@@ -47,8 +47,8 @@ export default class TaskManager extends React.Component {
                                 </Text>
                             </View>
 
-                            <View style={[appStyle.TM_card]}>
-                                <Text style={[appStyle.TM_cardText]}>
+                            <View style={[appStyle.cardArea]}>
+                                <Text style={[appStyle.cardText]}>
                                     good night baby (feat. Moe Shop){`\n`}
                                     Inubousaki Shian{`\n`}{`\n`}
                                     イイねの数 ミリオンでも i'm still lonely{`\n`}
@@ -59,11 +59,8 @@ export default class TaskManager extends React.Component {
                                     imagine ナイフのない世界{`\n`}
                                     peace ジョンがいる世界{`\n`}
                                     人生は捨てたもんじゃない　愛　愛　愛{`\n`}
-                                    
-
                                 </Text>
                             </View>
-
 
                         </View>
                     </View>

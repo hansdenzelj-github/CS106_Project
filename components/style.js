@@ -9,22 +9,23 @@ export const appStyle = StyleSheet.create({
     pageWrap: {
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: 'white',
+        backgroundColor: '#fff',
         fontSize: 50,
     },
     
     headWrap: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         backgroundColor: 'white',
     },
     headArea: {
         flexDirection: 'row',
-        justifyContent: 'center',
-        backgroundColor: '#eee',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        backgroundColor: '#fff',
         padding: 14,
     },
     headText: {
-        fontSize: 40,
+        fontSize: 34,
         fontWeight: 'bold',
         textAlign: 'center',
     },
@@ -32,11 +33,12 @@ export const appStyle = StyleSheet.create({
     bodyWrap_TM: {
         flex: 1,
         flexDirection: 'column',
-        padding: 16,
+        paddingHorizontal: 16,
         backgroundColor: 'white',
     },
     bodyArea_TM: {
         flex: 1,
+        paddingVertical: 10,
         alignItems: 'stretch',
     },
 
@@ -85,7 +87,6 @@ export const appStyle = StyleSheet.create({
     },
     footerArea: {
         alignItems: 'center',
-        backgroundColor: '#eee',
     },
 
     rectButton: {
@@ -131,7 +132,7 @@ export const appStyle = StyleSheet.create({
         marginRight: 14,
     },
 
-    TM_card: {
+    cardArea: {
         flex: 1,
         borderRadius: 10,
         backgroundColor: 'lightblue',
@@ -140,7 +141,7 @@ export const appStyle = StyleSheet.create({
         padding: 12,
         
     },
-    TM_cardText: {
+    cardText: {
         fontSize: 16,
     },
 

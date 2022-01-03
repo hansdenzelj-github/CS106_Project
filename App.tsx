@@ -5,13 +5,19 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import Welcome from './components/Welcome.js';
 import TaskManager from './components/TaskManager.js';
 import TaskDetail from './components/TaskDetail.js';
+import Schedule from './components/Schedule.js';
+import ScheduleManager from './components/ScheduleManager.js';
 
 export default function App() {
   return (
     <SafeAreaProvider>
-        {//<Welcome /><TaskManager />
-        }
+        {/*<Welcome />
+        <TaskManager />
         <TaskDetail />
+        <Schedule />
+
+        */}
+      <ScheduleManager />
     </SafeAreaProvider>
     
   );
