@@ -11,13 +11,16 @@ import ScheduleManager from './components/ScheduleManager.js';
 export default function App() {
   return (
     <SafeAreaProvider>
-        {/*<Welcome />
-        <TaskManager />
+        {/*
+        <Welcome />
         <TaskDetail />
+        <TaskManager />
         <Schedule />
-
+        <ScheduleManager />
         */}
-      <ScheduleManager />
+        
+        
+      
     </SafeAreaProvider>
     
   );
