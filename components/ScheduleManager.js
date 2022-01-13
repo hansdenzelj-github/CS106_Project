@@ -11,16 +11,29 @@ export default class ScheduleManager extends React.Component {
 
                 <View style={[appStyle.headArea]}>
                     <TouchableOpacity style={[appStyle.roundButton, appStyle.rB_40, appStyle.rB_pushright, appStyle.b_shadow]}>
-                        <Text>|||</Text>
+                        <Text>[Cal]</Text>
                     </TouchableOpacity>
                     <Text style={[appStyle.headText]}>
-                        Schedule Manager
+                        Date
                     </Text>
                 </View>
-                <ScrollView style={[appStyle.bodyWrap_TM]}>
-                    <View>
-                        <View style={[appStyle.bodyArea_TM]}>
-
+                <ScrollView style={[appStyle.bodyWrap_SM]}>  
+                    <View style={[appStyle.bodyArea_SM]}>
+                        <View style={[appStyle.bodyColumn_SM]}> 
+                          <Text>Left</Text>
+                          <View style={{backgroundColor: 'gray', flex: 1}}>
+                            <Text>Some Text</Text>
+                          </View>
+                        </View>
+                        
+                        <View style={[appStyle.bodyColumn_SM]}>
+                          <Text>Right</Text>
+                            <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN]}>
+                              <Text style={[]}>Button</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN]}>
+                              <Text style={[]}>Button</Text>
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </ScrollView>

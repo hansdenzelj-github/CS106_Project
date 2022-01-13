@@ -42,6 +42,24 @@ export const appStyle = StyleSheet.create({
         alignItems: 'stretch',
     },
 
+    bodyWrap_SM: {
+        flex: 1,
+        flexDirection: 'column',
+        paddingHorizontal: 16,
+        backgroundColor: 'white',
+    },
+    bodyArea_SM: {
+        flex: 1,
+        flexDirection: 'row',
+        paddingVertical: 10,
+        backgroundColor: 'yellow',
+    },
+    bodyColumn_SM: {
+        flex: 1,
+        alignItems: 'center',
+        backgroundColor: 'lightblue',
+    },
+
     bodyWrap_TD: {
         flex: 1,
         flexDirection: 'column',
