@@ -12,12 +12,12 @@ export default class Welcome extends React.Component {
             <View style={[appStyle.pageWrap]}>
 
                 <View style={[appStyle.headArea]}>
-                    <Text style={[appStyle.headText]}>App Name</Text>
+                    <Text style={[appStyle.headText]}>Sched</Text>
                 </View>
                 
                 <View style={[appStyle.bodyWrap_Welcome]}>
                     <View style={[appStyle.bodyArea]}>
-                        <Text style={[appStyle.bodyText]}>Sample Text</Text>
+                        <Text style={[appStyle.bodyText]}>Logo{'\n'}{'\n'}Sample Text{'\n'}Date Time, Greeting</Text>
                     </View>
                 </View>
 
@@ -25,7 +25,7 @@ export default class Welcome extends React.Component {
                     <View style={[appStyle.footerArea]}>
                         <TouchableOpacity style={[appStyle.enterButton]} onPress={() => this.props.navigation.navigate("Nav")}>
                             <Text style={[appStyle.enterButtonText]}>
-                                View your tasks
+                                Get to work
                             </Text>
                         </TouchableOpacity>
                     </View>

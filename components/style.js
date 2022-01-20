@@ -96,6 +96,7 @@ export const appStyle = StyleSheet.create({
     bodyText: {
         fontSize: 18,
         backgroundColor: 'yellow',
+        textAlign: 'center',
     },
 
     footerWrap: {

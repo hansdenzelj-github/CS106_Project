@@ -4,7 +4,7 @@ import { appStyle } from './style';
 
 function Setting () {
   return (
-    <View style={{flex: 1, flexDirection: 'row', alignContent: 'center'}}>
+    <View style={{flex: 1, flexDirection: 'row', alignContent: 'center', borderWidth: 1, margin: 2, paddingVertical: 4,}}>
       <Text>Setting</Text>
     </View>
   );
@@ -19,6 +19,9 @@ export default class Settings extends React.Component {
                 <ScrollView style={[appStyle.bodyWrap_TM]}>
                     <View>
                         <View style={[appStyle.bodyArea_TM]}>
+                          <Setting></Setting>
+                          <Setting></Setting>
+                          <Setting></Setting>
                           <Setting></Setting>
                         </View>
                     </View>

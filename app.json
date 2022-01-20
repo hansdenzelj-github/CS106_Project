@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CS106_Project",
-    "slug": "CS106_Project",
+    "name": "CS106_ProjectRev1",
+    "slug": "cs106_projectrev1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

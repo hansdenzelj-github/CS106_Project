@@ -85,55 +85,6 @@ export default function App() {
   );
 }
 
-
-
-{/*
-<SafeAreaProvider>
-            
-            <Welcome />
-            <TaskDetail />
-            <TaskManager />
-            <Schedule />
-            <Settings />
-            
-            <ScheduleManager />
-            
-          </SafeAreaProvider>
-*/}
-
-{/*
-function TM({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
-      <Button
-        title="Go to Details... again"
-        onPress={() => navigation.navigate('Schedule')}
-      />
-    </View>
-  );
-}
-
-function SC() {
-  return (
-    <Schedule />
-  );
-}
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Page.Navigator initialRouteName='Task Manager'>
-          <Page.Screen name='Task Manager' component={TM}/>
-          <Page.Screen name='Schedule' component={SC}/>
-          
-      </Page.Navigator>
-      
-    </NavigationContainer>
-  );
-}
-*/}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
