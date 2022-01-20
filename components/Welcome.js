@@ -1,3 +1,4 @@
+import { NavigationContainer, NavigationHelpersContext, useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -6,6 +7,7 @@ import { appStyle } from './style';
 export default class Welcome extends React.Component {
   render() {
     return (
+
         <SafeAreaView style={[appStyle.container]}>
             <View style={[appStyle.pageWrap]}>
 
@@ -21,7 +23,7 @@ export default class Welcome extends React.Component {
 
                 <View style={[appStyle.footerWrap]}>
                     <View style={[appStyle.footerArea]}>
-                        <TouchableOpacity style={[appStyle.enterButton]}>
+                        <TouchableOpacity style={[appStyle.enterButton]} onPress={() => this.props.navigation.navigate("Nav")}>
                             <Text style={[appStyle.enterButtonText]}>
                                 View your tasks
                             </Text>

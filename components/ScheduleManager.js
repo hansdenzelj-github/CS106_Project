@@ -9,34 +9,39 @@ export default class ScheduleManager extends React.Component {
           <SafeAreaView style={[appStyle.container]}>
               <View style={[appStyle.pageWrap]}>
 
-                <View style={[appStyle.headArea]}>
+                {/*<View style={[appStyle.headArea]}>
                     <TouchableOpacity style={[appStyle.roundButton, appStyle.rB_40, appStyle.rB_pushright, appStyle.b_shadow]}>
                         <Text>[Cal]</Text>
                     </TouchableOpacity>
                     <Text style={[appStyle.headText]}>
                         Date
                     </Text>
-                </View>
-                <ScrollView style={[appStyle.bodyWrap_SM]}>  
+                </View>*/}
+                
+                <View style={[appStyle.bodyWrap_SM]}>  
                     <View style={[appStyle.bodyArea_SM]}>
-                        <View style={[appStyle.bodyColumn_SM]}> 
-                          <Text>Left</Text>
-                          <View style={{backgroundColor: 'gray', flex: 1}}>
+                        <ScrollView style={[appStyle.bodyColumn_SM]}> 
+                          <View style={{backgroundColor: 'pink', padding: 10, flex: 0}}>
                             <Text>Some Text</Text>
                           </View>
-                        </View>
+                          <View style={{backgroundColor: 'gray', padding: 10, flex: 0}}>
+                            <Text>Some Text</Text>
+                          </View>
+                          <View style={{backgroundColor: 'lightyellow', padding: 10, flex: 0}}>
+                            <Text>Some Text</Text>
+                          </View>
+                        </ScrollView>
                         
-                        <View style={[appStyle.bodyColumn_SM]}>
-                          <Text>Right</Text>
-                            <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN]}>
-                              <Text style={[]}>Button</Text>
+                        <View style={[appStyle.bodyColumn_SM, {alignItems: 'center', justifyContent: 'center'}]}>
+                            <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN, {margin: 4,}]}>
+                              <Text style={[]}>Tasks</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN]}>
+                            <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN, {margin: 4,}]}>
                               <Text style={[]}>Button</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
-                </ScrollView>
+                </View>
                 
               </View>
               

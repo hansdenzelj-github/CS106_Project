@@ -2,13 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { appStyle } from './style';
+import TaskBox from './TaskContainer';
 
 export default class Schedule extends React.Component {
     render() {
       return (
-          <SafeAreaView style={[appStyle.container, {backgroundColor: 'white'}]}>
+          <View style={[appStyle.container, {backgroundColor: 'white'}]}>
               <View style={[appStyle.pageWrap]}>
-                <View style={[appStyle.headWrap]}>
+                {/*<View style={[appStyle.headWrap]}>
                   <View style={[appStyle.headArea, {justifyContent: 'flex-start', backgroundColor: 'white'}]}>
                       <TouchableOpacity style={[appStyle.roundButton, appStyle.rB_40, appStyle.rB_pushright, appStyle.b_shadow]}>
                           <Text>{`<--`}</Text>
@@ -17,13 +18,10 @@ export default class Schedule extends React.Component {
                           Schedule
                       </Text>
                   </View>
-                </View>
-                
-
+                </View>*/}
                 <ScrollView style={[appStyle.bodyWrap_TM]}>
                     <View>
                         <View style={[appStyle.bodyArea_TM]}>
-
                         <View style={[appStyle.cardArea]}>
                           <Text style={[appStyle.cardText]}>
                             Sample Card
@@ -36,6 +34,9 @@ export default class Schedule extends React.Component {
                             {`\n`}With newline, idk how to do this beautifully
                           </Text>
                         </View>
+
+                        <TaskBox text={'Taskbox example'} />
+
 
                         </View>
                     </View>
@@ -51,7 +52,7 @@ export default class Schedule extends React.Component {
                 </View>
               </View>
 
-          </SafeAreaView>
+          </View>
       ); 
     }
   }

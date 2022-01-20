@@ -51,12 +51,13 @@ export const appStyle = StyleSheet.create({
     bodyArea_SM: {
         flex: 1,
         flexDirection: 'row',
-        paddingVertical: 10,
-        backgroundColor: 'yellow',
+        padding: 4,
+        margin: 0,
+        backgroundColor: 'black',
     },
     bodyColumn_SM: {
         flex: 1,
-        alignItems: 'center',
+        //alignItems: 'center',
         backgroundColor: 'lightblue',
     },
 
