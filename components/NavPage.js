@@ -6,7 +6,7 @@ import { appStyle } from './style';
 export default class NavPage extends React.Component {
     render() {
       return (
-          <SafeAreaView style={{flex: 1, backgroundColor: 'pink'}}>
+          <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
             <View style={{flex: 1, flexDirection: 'row', paddingHorizontal: 40, alignItems: 'center'}}>
 
               <View style={{flex: 1, flexDirection: 'column'}}>

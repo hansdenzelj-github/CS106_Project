@@ -10,14 +10,6 @@ export default class TaskManager extends React.Component {
           <View style={[appStyle.container]}>
               <View style={[appStyle.pageWrap]}>
 
-               {/*<View style={[appStyle.headArea]}>
-                    <TouchableOpacity style={[appStyle.roundButton, appStyle.rB_40, appStyle.rB_pushright, appStyle.b_shadow]}>
-                        <Text>|||</Text>
-                    </TouchableOpacity>
-                    <Text style={[appStyle.headText]}>
-                        Task Manager
-                    </Text>
-                </View>*/}
                 <ScrollView style={[appStyle.bodyWrap_TM]}>
                     <View>
                         <View style={[appStyle.bodyArea_TM]}>
@@ -52,16 +44,21 @@ export default class TaskManager extends React.Component {
 
                             <View style={[appStyle.cardArea]}>
                                 <Text style={[appStyle.cardText]}>
-                                    good night baby (feat. Moe Shop){`\n`}
-                                    Inubousaki Shian{`\n`}{`\n`}
-                                    イイねの数 ミリオンでも i'm still lonely{`\n`}
-                                    夢見る good night baby{`\n`}
-                                    今夜も踊り誤魔化すよ T・O・K・Y・O{`\n`}
-                                    生きてるよ{`\n`}
-                                    {`\n`}
-                                    imagine ナイフのない世界{`\n`}
-                                    peace ジョンがいる世界{`\n`}
-                                    人生は捨てたもんじゃない　愛　愛　愛{`\n`}
+                                ずっと このままとかだったり{`\n`}
+                                ごめん そんなのはイヤだったり{`\n`}
+                                Changing 願ったり叶ったり{`\n`}
+                                Get out 今までのあたし{`\n`}{`\n`}
+
+                                毎日 ほんの少し無理をして{`\n`}
+                                苦にならない きっと楽しい{`\n`}
+                                Wake up やる気奮い起こして{`\n`}{`\n`}
+
+                                しょうがないか{`\n`}{`\n`}
+
+                                せっかく生きてるんだ{`\n`}
+                                楽しまなきゃね ソンソン{`\n`}
+                                憧れのキミに もっと{`\n`}
+                                近づくための冒険{`\n`}
                                 </Text>
                             </View>
 

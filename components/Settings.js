@@ -1,7 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView} from 'react-native';
 import { appStyle } from './style';
+
+function Setting () {
+  return (
+    <View style={{flex: 1, flexDirection: 'row', alignContent: 'center'}}>
+      <Text>Setting</Text>
+    </View>
+  );
+} 
 
 export default class Settings extends React.Component {
     render() {
@@ -12,7 +19,7 @@ export default class Settings extends React.Component {
                 <ScrollView style={[appStyle.bodyWrap_TM]}>
                     <View>
                         <View style={[appStyle.bodyArea_TM]}>
-
+                          <Setting></Setting>
                         </View>
                     </View>
                 </ScrollView>
