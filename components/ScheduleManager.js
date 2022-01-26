@@ -6,17 +6,8 @@ import { appStyle } from './style';
 export default class ScheduleManager extends React.Component {
     render() {
       return (
-          <SafeAreaView style={[appStyle.container]}>
+          <View style={[appStyle.container]}>
               <View style={[appStyle.pageWrap]}>
-
-                {/*<View style={[appStyle.headArea]}>
-                    <TouchableOpacity style={[appStyle.roundButton, appStyle.rB_40, appStyle.rB_pushright, appStyle.b_shadow]}>
-                        <Text>[Cal]</Text>
-                    </TouchableOpacity>
-                    <Text style={[appStyle.headText]}>
-                        Date
-                    </Text>
-                </View>*/}
                 
                 <View style={[appStyle.bodyWrap_SM]}>  
                     <View style={[appStyle.bodyArea_SM]}>
@@ -32,7 +23,7 @@ export default class ScheduleManager extends React.Component {
                           </View>
                         </ScrollView>
                         
-                        <View style={[appStyle.bodyColumn_SM, {alignItems: 'center', justifyContent: 'center'}]}>
+                        <View style={[appStyle.bodyColumn_SM, {alignItems: 'center', justifyContent: 'center', borderWidth: 1,}]}>
                             <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN, {margin: 4,}]}>
                               <Text style={[]}>Tasks</Text>
                             </TouchableOpacity>
@@ -53,7 +44,7 @@ export default class ScheduleManager extends React.Component {
                 </View>
               </View>
 
-          </SafeAreaView>
+          </View>
       ); 
     }
   }

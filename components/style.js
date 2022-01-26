@@ -45,15 +45,14 @@ export const appStyle = StyleSheet.create({
     bodyWrap_SM: {
         flex: 1,
         flexDirection: 'column',
-        paddingHorizontal: 16,
+        paddingHorizontal: 0,
         backgroundColor: 'white',
     },
     bodyArea_SM: {
         flex: 1,
         flexDirection: 'row',
-        padding: 4,
+        padding: 0,
         margin: 0,
-        backgroundColor: 'black',
     },
     bodyColumn_SM: {
         flex: 1,
