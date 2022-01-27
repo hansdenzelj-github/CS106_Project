@@ -9,7 +9,7 @@ const TaskModal = (props) => {
     return (
         <Modal visible={modalOpen} transparent={true} presentationStyle='overFullScreen'>
             <TouchableWithoutFeedback onPress={() => setModalOpen(false)}> 
-                <View style={{flex: 1, opacity: 1, alignItems: 'center', justifyContent: 'center',}}>
+                <View style={{flex: 1, opacity: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(40, 40, 40, 0.5)'}}>
                     <View style={{flexDirection: 'row', backgroundColor: 'white', margin: 4, padding: 4, borderRadius: 5,}}>
                         <TouchableOpacity style={[styles.modalButton]} onPress={() => alert('remove')}>
                             <Text>Remove</Text>
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'red',
     },
     modalButton: {
+        opacity: 1,
         margin: 2,
         padding: 4,
         borderRadius: 8,
