@@ -1,6 +1,6 @@
 import { NavigationContainer, NavigationHelpersContext, useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity,} from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { appStyle } from './style';
 
