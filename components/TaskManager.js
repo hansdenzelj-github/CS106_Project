@@ -1,12 +1,14 @@
-import React from 'react';
+import React,{Ref, useRef} from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Modal } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { appStyle } from './style';
 import TaskBox from './TaskContainer';
+import TaskBoxDummy from './TaskContainerDummy'
 import TaskModal from './TaskModal';
 
 export default class TaskManager extends React.Component {
     render() {
+
       return (
           <View style={[appStyle.container]}>
               
@@ -14,13 +16,11 @@ export default class TaskManager extends React.Component {
                 <ScrollView style={[appStyle.bodyWrap_TM]}>
                     <View>
                         <View style={[appStyle.bodyArea_TM]}>
-                        <TaskModal></TaskModal>
-                            <TaskBox text={"Taskbox testing"} />
-                            <TaskBox text={"I honestly don't know what to do\ntoo many group projects imo"} />
-                            <TaskBox text={"This is so difficult"} />
-                            <TaskBox text={"Sample Task"} />
-                            <TaskBox text={"This is using the ScrollView component...\n\n\n\n\n\n\n\n"} />
-                            <TaskBox text={"ずっと このままとかだったり\nごめん そんなのはイヤだったり\nChanging 願ったり叶ったり\nGet out 今までのあたし\n\n 毎日 ほんの少し無理をして\n苦にならない きっと楽しい"} />
+                            <TaskBox text={"I have no idea what to do\nbut this is a sample task"} />
+                            <TaskBoxDummy text={"This is so difficult"} />
+                            <TaskBoxDummy text={"Sample Task"} />
+                            <TaskBoxDummy text={"This is using the ScrollView component...\n\n\n\n\n\n\n\n"} />
+                            <TaskBoxDummy text={"Text\neven more text\nmore and more text\nGet out 今までのあたし\n\n 毎日 ほんの少し無理をして\n苦にならない きっと楽しい"} />
                         </View>
                     </View>
                 </ScrollView>

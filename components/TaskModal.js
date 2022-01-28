@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, Modal, TouchableOpacity, TouchableWithoutFeedback} from 'react-native';
 import { appStyle } from "./style";
-import TaskBox from "./TaskContainer";
+//import TaskBox from "./TaskContainer";
+import TaskBoxDummy from "./TaskContainerDummy";
 //i don't want to work anymore, someone else pls
 
 const TaskModal = (props) => {
     const [modalOpen, setModalOpen] = useState(true);
     
     return (
-        <Modal visible={modalOpen} transparent={true} presentationStyle='overFullScreen'>
+        <Modal visible={modalOpen} transparent={true} presentationStyle='overFullScreen' animationType="fade">
             <TouchableWithoutFeedback onPress={() => setModalOpen(false)}> 
                 <View style={{flex: 1, flexDirection: 'column', opacity: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(40, 40, 40, 0.5)'}}>
                     <View style={{flex: 0.2, width: 300, height: 400,}}>
-                    <TaskBox text={"text long long"}></TaskBox>
+                    <TaskBoxDummy text={props.text}></TaskBoxDummy>
                     </View>
                     <View style={{flexDirection: 'row', backgroundColor: 'white', margin: 4, padding: 4, borderRadius: 5,}}>
                         <TouchableOpacity style={[styles.modalButton]} onPress={() => alert('remove')}>
