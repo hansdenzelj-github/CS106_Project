@@ -57,7 +57,7 @@ export const appStyle = StyleSheet.create({
     bodyColumn_SM: {
         flex: 1,
         //alignItems: 'center',
-        backgroundColor: 'lightblue',
+        backgroundColor: 'white',
     },
 
     bodyWrap_TD: {

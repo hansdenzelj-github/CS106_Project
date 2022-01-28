@@ -23,12 +23,12 @@ export default class ScheduleManager extends React.Component {
                           </View>
                         </ScrollView>
                         
-                        <View style={[appStyle.bodyColumn_SM, {alignItems: 'center', justifyContent: 'center', borderWidth: 1,}]}>
+                        <View style={[appStyle.bodyColumn_SM, {alignItems: 'center', justifyContent: 'center', backgroundColor: 'lightgray',}]}>
                             <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN, {margin: 4,}]}>
                               <Text style={[]}>Tasks</Text>
                             </TouchableOpacity>
                             <TouchableOpacity style={[appStyle.rectButton, appStyle.b_shadow, appStyle.rTB_TN, {margin: 4,}]}>
-                              <Text style={[]}>Button</Text>
+                              <Text style={[]}>Routine</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
