@@ -94,7 +94,7 @@ export const appStyle = StyleSheet.create({
     },
     bodyText: {
         fontSize: 18,
-        backgroundColor: 'yellow',
+        backgroundColor: 'white',
         textAlign: 'center',
     },
 
