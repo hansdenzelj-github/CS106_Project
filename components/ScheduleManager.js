@@ -13,13 +13,13 @@ export default class ScheduleManager extends React.Component {
                     <View style={[appStyle.bodyArea_SM]}>
                         <ScrollView style={[appStyle.bodyColumn_SM]}> 
                           <View style={{backgroundColor: 'pink', padding: 10, flex: 0}}>
-                            <Text>Some Text</Text>
+                            <Text>Example Task</Text>
                           </View>
                           <View style={{backgroundColor: 'gray', padding: 10, flex: 0}}>
-                            <Text>Some Text</Text>
+                            <Text>Feed the dogs</Text>
                           </View>
                           <View style={{backgroundColor: 'lightyellow', padding: 10, flex: 0}}>
-                            <Text>Some Text</Text>
+                            <Text>Attend a meeting</Text>
                           </View>
                         </ScrollView>
                         

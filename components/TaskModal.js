@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {View, Text, StyleSheet, Modal, TouchableOpacity, TouchableWithoutFeedback} from 'react-native';
 import { appStyle } from "./style";
+import TaskBox from "./TaskContainer";
 //i don't want to work anymore, someone else pls
 
 const TaskModal = (props) => {
@@ -9,7 +10,10 @@ const TaskModal = (props) => {
     return (
         <Modal visible={modalOpen} transparent={true} presentationStyle='overFullScreen'>
             <TouchableWithoutFeedback onPress={() => setModalOpen(false)}> 
-                <View style={{flex: 1, opacity: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(40, 40, 40, 0.5)'}}>
+                <View style={{flex: 1, flexDirection: 'column', opacity: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(40, 40, 40, 0.5)'}}>
+                    <View style={{flex: 0.2, width: 300, height: 400,}}>
+                    <TaskBox text={"text long long"}></TaskBox>
+                    </View>
                     <View style={{flexDirection: 'row', backgroundColor: 'white', margin: 4, padding: 4, borderRadius: 5,}}>
                         <TouchableOpacity style={[styles.modalButton]} onPress={() => alert('remove')}>
                             <Text>Remove</Text>
